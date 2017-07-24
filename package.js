@@ -1,10 +1,10 @@
 'use strict';
 
 Package.describe({
-    name: 'vazco:universe-selectize',
+    name: 'vansonhk:universe-selectize',
     summary: 'Universe select input standalone - with the appearance as selectize. It is for use without autoform.',
     version: '0.1.22',
-    git: 'https://github.com/vazco/meteor-universe-selectize.git'
+    git: 'https://github.com/vansonhk/meteor-universe-selectize.git'
 });
 
 Package.onUse(function(api) {

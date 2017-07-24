@@ -402,10 +402,6 @@ UniSelectize.prototype.getOptionsFromMethod = function (values) {
 Template.universeSelectize.onCreated(function () {
     var template = this;
     template.uniSelectize = new UniSelectize(template.data, template);
-});
-
-Template.universeSelectize.onRendered(function () {
-    var template = this;
 
     template.autorun(function () {
         var data = Template.currentData();
@@ -418,6 +414,10 @@ Template.universeSelectize.onRendered(function () {
             template.uniSelectize.setItems(options, value);
         }
     });
+});
+
+Template.universeSelectize.onRendered(function () {
+    var template = this;
 
     template.autorun(function () {
         template.uniSelectize.itemsAutorun();
